@@ -10,5 +10,5 @@
       private: false  
   tasks:
     - name: print the following
-      ansible.builtin.degbg:
+      ansible.builtin.degbug:
         msg: "hello, username is {{ username }}"
