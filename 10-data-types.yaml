@@ -13,4 +13,4 @@
   tasks: 
     - name: data type
       ansible.builtin.debug:
-      msg: "{{ course }}, {{ duration }}, {{ tools }}, {{ concepts }}"
+        msg: "{{ course }}, {{ duration }}, {{ tools }}, {{ concepts }}"
