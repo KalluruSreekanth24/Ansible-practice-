@@ -1,0 +1,14 @@
+- name: vars and tasks
+  hosts: frontend
+  become: yes
+  vars:
+    name: sreekanth
+    date: 22
+    from: var 
+  tasks:
+    - name: print
+      vars:
+        name: "reporting from task"
+      ansible.builtin.debug:
+        msg: "hey hello {{ name }}"
+
