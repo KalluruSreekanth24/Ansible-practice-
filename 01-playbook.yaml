@@ -1,7 +1,7 @@
 - name:first play book
   hosts:frontend
   become:yes
-  connection:yes
+  
   tasks:
-  - name:checking th ping connection
+  - name:ping
     ansible.builtin.ping:
