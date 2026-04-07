@@ -1,0 +1,10 @@
+- name: variable handeling
+  hosts: frontend
+  become: yes
+  vars:
+    name: sreekanth
+    birth: april22
+  tasks:
+    - name: play01
+      ansible.builtin.debug:
+        msg: "hey hello I'm {{ name }} and my birthday is on {{ birth }}"
