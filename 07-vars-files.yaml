@@ -1,0 +1,9 @@
+- name: giving variable from file
+  hosts: frontend
+  vars_files:
+    - course.yaml
+  tasks:
+    - name: print the given task
+      ansible.builtin.debug:
+        msg: "hey your {{ phone }} and ur {{ course }}"
+
