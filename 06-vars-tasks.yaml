@@ -2,7 +2,7 @@
   hosts: frontend
   become: yes
   vars:
-    name: sreekanth
+    myname: sreekanth
     date: 22
     from: var 
   tasks:
