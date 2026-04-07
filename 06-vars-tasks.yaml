@@ -4,7 +4,7 @@
   vars:
     myname: sreekanth
     date: 22
-    from: var 
+     
   tasks:
     - name: print
       vars:
