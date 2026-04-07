@@ -1,0 +1,8 @@
+- name: playbook related to installation
+  hosts: frontend
+  become: yes
+  tasks:
+    - name: installing nginx
+      ansible.builtin.package
+      name: nginx
+      state: present
