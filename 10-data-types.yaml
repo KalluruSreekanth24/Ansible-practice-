@@ -3,13 +3,13 @@
   vars: 
     course: "devops with aws"
     duration: 120
-  tools:
-    - linux
-    - shell
-    - aws
-  concepts:
-    cloud: aws
-    cm: ansible
+    tools:
+      - linux
+      - shell
+      - aws
+    concepts:
+      cloud: aws
+      cm: ansible
   tasks: 
     - name: data type
       ansible.builtin.debug:
