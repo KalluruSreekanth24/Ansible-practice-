@@ -1,0 +1,14 @@
+- name: loadnig variables in prompt
+  hosts: forntend
+  become: yes
+  vars_prompt:
+    - name: username
+      prompt: what is your username?
+      private: false
+    - name: pass
+      prompt: what is your pass?
+      private: false  
+  tasks:
+    - name: print the following
+      ansible.builtin.degbg:
+        msg: "hello, username is {{ username }}"
