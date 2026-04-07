@@ -1,0 +1,7 @@
+- name: passing arguments in the command line
+  hosts: frontend
+  become: yes
+  tasks: 
+    - name: print the name
+      ansible.builtin.debug:
+      msg: "what is your {{ username }} and what is your {{ phone }}"
