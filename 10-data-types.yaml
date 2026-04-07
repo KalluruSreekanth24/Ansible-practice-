@@ -4,9 +4,9 @@
     course: "devops with aws"
     duration: 120
     tools:
-      - linux
-      - shell
-      - aws
+    - linux
+    - shell
+    - aws
     concepts:
       cloud: aws
       cm: ansible
