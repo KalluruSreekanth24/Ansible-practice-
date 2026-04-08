@@ -1,0 +1,14 @@
+- name: error handeling
+  hosts: local
+  connection: local
+  tasks:
+    - name: error equal to true
+      ansible.builtin.command: id roboshob
+      register: temp
+      ignore_errors: true
+    - name: printing the message
+      ansible.builtin.debug:
+        msg: "{{ temp }}"
+    - name: rc
+      ansible.builtin.command: useradd roboshop
+      when: temp.rc != 0
