@@ -1,0 +1,11 @@
+- name: checking the loops 
+  hosts: local
+  connection: local
+  tasks: 
+    - name: basic loops
+      ansible.builtin.debug:
+        msg: "calling one by one {{ item }}"
+      loop:
+        - ansible
+        - aws
+        - linux
