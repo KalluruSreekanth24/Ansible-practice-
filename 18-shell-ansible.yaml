@@ -1,0 +1,13 @@
+- name: checking by using the shell
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: using pipe and grep
+      ansible.builtin.command: cat /etc/passwd | grep root
+        register: temp
+    - name: printing the output
+      ansible.builtin.debug:
+        msg: "{{ temp }}"
+
+    
