@@ -4,7 +4,7 @@
   become: yes
   tasks:
     - name: using pipe and grep
-      ansible.builtin.command: cat /etc/passwd | grep root
+      ansible.builtin.shell: cat /etc/passwd | grep root
         register: temp
     - name: printing the output
       ansible.builtin.debug:
