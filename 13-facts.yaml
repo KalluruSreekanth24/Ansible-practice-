@@ -1,6 +1,7 @@
 - name: facts
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name: checking the fact of redhat
       ansible.builtin.dnf:
