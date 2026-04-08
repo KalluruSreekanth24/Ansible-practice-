@@ -5,7 +5,7 @@
   tasks:
     - name: using pipe and grep
       ansible.builtin.shell: cat /etc/passwd | grep root
-        register: temp
+      register: temp
     - name: printing the output
       ansible.builtin.debug:
         msg: "{{ temp }}"
