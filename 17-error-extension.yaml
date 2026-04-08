@@ -1,6 +1,7 @@
 - name: error handeling
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name: error equal to true
       ansible.builtin.command: id roboshob
